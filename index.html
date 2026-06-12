@@ -3,42 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Landing</title>
+  <title>Watch Video</title>
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image"/>
   <meta name="twitter:title" content="MP4 UPDATE"/>
-  <meta name="twitter:description" content="MP4 UPDATE"/>
+  <meta name="twitter:description" content="Click to Watch"/>
   <meta name="twitter:image" content="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiefAlDzVMps9CmlOahUTkdBYV4bYO5ih9zUKrD8cucSXhqyga55oN-YTc2kph1O0mmKfUK2T5l3Bzyw4IVLEJGj9RKV_byIg_aLdmW97_yJDKQeXjiWXAKoTCJY0f0vqT6ImWVXRZ8ZarsIwft-iqH_zqEHnrXlIPnnKDy7PqCcRsm4OB6f_7j8WZBXMSB/s1328/594.jpg"/>
 
+  <!-- Script Popunder Utama -->
+  <script async src="https://peacyx.com/code/pops.js?h=waWQiOjEyMjkzMDEsInNpZCI6MTc5NDM1Miwid2lkIjo3NDI4OTAsInNyYyI6Mn0=eyJ"></script>
+
   <style>
-    body, html {
-      margin: 0;
-      padding: 0;
-      height: 100%;
-      overflow: hidden;
-    }
-
-    /* GIF full screen */
-    .bg {
-      position: fixed;
-      width: 100%;
-      height: 100%;
-      background: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjwsuu_4AzERNJGVidORt7O7fBDgfQjAcKGeixnJSJ93hiLHS5EK5zhoyVnZyNL6Y79VoWMNYSLo919hyphenhyphenQNO7pRwKi7n-UZCmCuSsRS0rbh3KSnIuE7_tV8lB13wbaVrEJOcYvdCaastDaveacT4OiHy8cnOvWOpUPaZ_grNdn164ZmjON-7K6NqE0BLaSt/s1600/942.gif') center/cover no-repeat;
-    }
-
-    /* Popup gambar */
-    .popup {
-      position: fixed;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      display: none;
-      z-index: 10;
-      width: 85%;
-      max-width: 320px;
-      cursor: pointer;
-    }
+    body, html { margin: 0; padding: 0; height: 100%; overflow: hidden; background: #000; }
+    .bg { position: fixed; width: 100%; height: 100%; background: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjwsuu_4AzERNJGVidORt7O7fBDgfQjAcKGeixnJSJ93hiLHS5EK5zhoyVnZyNL6Y79VoWMNYSLo919hyphenhyphenQNO7pRwKi7n-UZCmCuSsRS0rbh3KSnIuE7_tV8lB13wbaVrEJOcYvdCaastDaveacT4OiHy8cnOvWOpUPaZ_grNdn164ZmjON-7K6NqE0BLaSt/s1600/942.gif') center/cover no-repeat; }
+    .popup { position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); display: none; z-index: 10; width: 85%; max-width: 320px; cursor: pointer; }
   </style>
 </head>
 <body>
@@ -53,14 +32,15 @@
 />
 
 <script>
-  // delay 2 detik
+  // Menampilkan tombol setelah 1.5 detik
   setTimeout(function() {
     document.getElementById('popup').style.display = 'block';
-  }, 2000);
+  }, 1500);
 
+  // Fungsi saat tombol diklik
   function goLink() {
-    // LINK ADSTERRA LAMA SUDAH DIGANTI DENGAN URL POPUP EVADAV DI BAWAH INI
-    window.location.href = "https://rumalt.com/play?h=waWQiOjEyMjkzMDEsInNpZCI6MTc5NDIxNSwid2lkIjo3NDI3NDIsInNyYyI6Mn0=eyJ&si1=&si2=";
+    // 1. Arahkan ke website tujuan
+    window.location.href = "https://rumalt.com/video-14?h=waWQiOjEyMjkzMDEsInNpZCI6MTc5NDM1Miwid2lkIjo3NDI4OTAsInNyYyI6Mn0=eyJ&si1=&si2=";
   }
 </script>
 
